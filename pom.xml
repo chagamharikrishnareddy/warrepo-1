@@ -21,12 +21,11 @@
   <distributionManagement>
     <repository>
       <id>testjob</id>
-      <name>releases</name>
+     
       <url>http://3.16.31.143:8080/nexus-latest/content/repositories/releases/</url>
     </repository>
     <snapshotRepository>
       <id>testjob</id>
-      <name>snapshots</name>
       <url>http://3.16.31.143:8080/nexus-latest/content/repositories/snapshots/</url>
     </snapshotRepository>
   </distributionManagement> 
