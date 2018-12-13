@@ -1,6 +1,5 @@
 ---
 - hosts: dev
-  sudo: yes
   tasks:
    - name: Install add-apt-repostory
      become: yes
@@ -25,9 +24,9 @@
      file:
       path: /home/ubuntu/tomcat
       state: directory
-      mode: 440
-      owner: root
-      group: root
+      mode: 0755
+      
+      
       
 
    - name: Download Tomcat
