@@ -23,7 +23,7 @@
 
    - name: Create Folder
      file:
-      path: /home/ubuntu/tomcat
+      path: /home/ubuntu/tomcat1
       state: directory
       mode: 0755
       
@@ -31,10 +31,10 @@
       
 
    - name: Download Tomcat
-     get_url: url=https://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.13/bin/apache-tomcat-9.0.13.tar.gz dest=/home/ubuntu/tomcat
+     get_url: url=https://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.13/bin/apache-tomcat-9.0.13.tar.gz dest=/home/ubuntu/tomcat1
 
    - name: Extract archive
-     unarchive: src=/home/ubuntu/tomcat/apache-tomcat-9.0.13.tar.gz dest=/home/ubuntu/tomcat remote_src=yes
+     unarchive: src=/home/ubuntu/tomcat/apache-tomcat-9.0.13.tar.gz dest=/home/ubuntu/tomcat1 remote_src=yes
   
    - name: Download Application
      get_url: url=https://s3.us-east-2.amazonaws.com/krishbucket12/petclinic.war dest=/home/ubuntu
