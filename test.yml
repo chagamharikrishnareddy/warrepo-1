@@ -24,7 +24,7 @@
      file:
       path: /home/ubuntu/tomcat
       state: directory
-      mode: 0755
+      mode: 440
       owner: root
       group: root
       
